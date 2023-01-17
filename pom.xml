@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.github.dbstarll.parent</groupId>
+    <artifactId>base</artifactId>
+    <version>1.2.9</version>
+  </parent>
+  <groupId>io.github.dbstarll.test</groupId>
+  <artifactId>dependency-move-to-org</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>dependency-move-to-org</name>
+  <description>dependency-move-to-org</description>
+  <url>https://github.com/dbstarll/dependency-move-to-org</url>
+
+  <scm>
+    <connection>scm:git:${project.git.git.root}</connection>
+    <developerConnection>scm:git:${project.git.web.root}</developerConnection>
+    <url>${project.git.web.master}</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <properties>
+    <project.git.project>dependency-move-to-org</project.git.project>
+    <!-- module version -->
+    <version.test-move-to-org>1.0.1</version.test-move-to-org>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.github.dbstarll.test</groupId>
+      <artifactId>test-move-to-org</artifactId>
+      <version>${version.test-move-to-org}</version>
+    </dependency>
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>site-local</id>
+      <distributionManagement>
+        <site>
+          <id>local</id>
+          <url>${project.site.root.project}</url>
+        </site>
+      </distributionManagement>
+    </profile>
+  </profiles>
+</project>
