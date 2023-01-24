@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.github.dbstarll.parent</groupId>
     <artifactId>base</artifactId>
-    <version>1.2.11-SNAPSHOT</version>
+    <version>1.2.10</version>
   </parent>
   <groupId>io.github.dbstarll.test</groupId>
   <artifactId>dependency-move-to-org</artifactId>
@@ -25,7 +25,7 @@
   <properties>
     <project.git.project>dependency-move-to-org</project.git.project>
     <!-- module version -->
-    <version.test-move-to-org>1.0.5-SNAPSHOT</version.test-move-to-org>
+    <version.test-move-to-org>1.0.5</version.test-move-to-org>
   </properties>
 
   <dependencies>
