@@ -19,4 +19,4 @@ jobs:
     steps:
       - uses: dbstar-org/setup-maven@main
       - run: cat ~/.m2/settings.xml
-      - run: echo 'version is :: ${{ matrix.version }}'
+      - run: echo 'version is ${{ matrix.version }}'
