@@ -8,10 +8,11 @@ on:
     paths-ignore:
       - '.github/workflows/release.yml'
       - 'README.md'
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: dbstar-org/setup-maven@v1
+      - uses: dbstar-org/setup-maven@main
       - run: cat ~/.m2/settings.xml
