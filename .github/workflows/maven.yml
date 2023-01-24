@@ -1,0 +1,17 @@
+name: maven
+
+on:
+  push:
+    branches:
+      - main
+      - snapshot-*
+    paths-ignore:
+      - '.github/workflows/release.yml'
+      - 'README.md'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dbstar-org/setup-maven@v1
+      - run: cat ~/.m2/settings.xml
