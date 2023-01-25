@@ -14,5 +14,5 @@ jobs:
   maven:
     permissions:
       packages: write
-    uses: dbstar-org/general/.github/workflows/maven-release.yml@main
+    uses: dbstar-org/general/.github/workflows/maven.yml@main
     secrets: inherit
