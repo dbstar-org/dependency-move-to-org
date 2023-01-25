@@ -10,6 +10,9 @@ on:
       - 'README.md'
   workflow_dispatch:
 
+env:
+  top-env: abc
+
 jobs:
   maven:
     permissions:
