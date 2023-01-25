@@ -14,5 +14,5 @@ jobs:
   maven:
     permissions:
       packages: write
-    uses: dbstarll/general/.github/workflows/maven.yml@main
+    uses: ${{ github.repository_owner }}/general/.github/workflows/maven.yml@main
     secrets: inherit
