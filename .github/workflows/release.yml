@@ -11,6 +11,6 @@ jobs:
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
       GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-      GPG_KEY: ${{ secrets.GPG_KEY }}
+      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
       OSS_USERNAME: ${{ secrets.OSS_USERNAME }}
       OSS_PASSWORD: ${{ secrets.OSS_PASSWORD }}
