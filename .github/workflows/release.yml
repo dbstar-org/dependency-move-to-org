@@ -7,7 +7,7 @@ jobs:
     permissions:
       contents: write
       packages: write
-    uses: dbstar-org/general/.github/workflows/maven-release.yml@v1
+    uses: dbstar-org/general/.github/workflows/maven-release.yml@main
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
       GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
