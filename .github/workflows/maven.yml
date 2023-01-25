@@ -14,7 +14,7 @@ jobs:
   maven:
     permissions:
       packages: write
-    uses: dbstar-org/general/.github/workflows/maven.yml@v1
+    uses: dbstar-org/general/.github/workflows/maven.yml@main
     with:
       SONAR_PROJECT_KEY: ${{ vars.SONAR_PROJECT_KEY }}
     secrets:
