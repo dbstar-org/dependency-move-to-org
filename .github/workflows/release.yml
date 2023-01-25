@@ -7,10 +7,5 @@ jobs:
     permissions:
       contents: write
       packages: write
-    uses: dbstar-org/general/.github/workflows/maven-release.yml@main
-    secrets:
-      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-      GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
-      OSS_USERNAME: ${{ secrets.OSS_USERNAME }}
-      OSS_PASSWORD: ${{ secrets.OSS_PASSWORD }}
+    uses: dbstarll/general/.github/workflows/maven-release.yml@v1
+    secrets: inherit

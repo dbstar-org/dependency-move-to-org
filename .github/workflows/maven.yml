@@ -10,12 +10,9 @@ on:
       - 'README.md'
   workflow_dispatch:
 
-env:
-  top-env: abc
-
 jobs:
   maven:
     permissions:
       packages: write
-    uses: dbstar-org/general/.github/workflows/maven.yml@main
+    uses: dbstarll/general/.github/workflows/maven.yml@v1
     secrets: inherit
