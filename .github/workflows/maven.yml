@@ -1,18 +1,15 @@
-name: maven
+name: Maven Verify and Deploy CI
 
 on:
   push:
     branches:
-      - main
-      - snapshot-*
     paths-ignore:
       - '.github/workflows/release.yml'
       - 'README.md'
-  workflow_dispatch:
 
 jobs:
   maven:
     permissions:
       packages: write
-    uses: dbstarll/general/.github/workflows/maven.yml@v1
+    uses: dbstar-org/general/.github/workflows/maven.yml@v1
     secrets: inherit

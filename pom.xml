@@ -12,7 +12,7 @@
 
   <name>dependency-move-to-org</name>
   <description>dependency-move-to-org</description>
-  <url>https://github.com/dbstarll/dependency-move-to-org</url>
+  <url>https://github.com/dbstar-org/dependency-move-to-org</url>
 
   <scm>
     <connection>scm:git:${project.git.git.root}</connection>
@@ -23,8 +23,9 @@
 
   <properties>
     <project.git.project>dependency-move-to-org</project.git.project>
+    <project.git.group>dbstar-org</project.git.group>
     <!-- module version -->
-    <version.test-move-to-org>1.0.5</version.test-move-to-org>
+    <version.test-move-to-org>1.0.8</version.test-move-to-org>
   </properties>
 
   <dependencies>
